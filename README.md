@@ -50,6 +50,10 @@ ggplot(data, aes(x = reorder(Weapon, -KPR), y = KPR)) +
   coord_flip() +
   labs(title = "Kills Per Round (KPR) por Arma", x = "Arma", y = "KPR") +
   theme_minimal()
+## Exemplo de Visualização
+
+![Exemplo de Visualização](Rplot31.png)
+
 ```
 
 # Porcentagem de headshots por arma
