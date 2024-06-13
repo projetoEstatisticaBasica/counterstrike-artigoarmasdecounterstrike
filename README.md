@@ -53,7 +53,7 @@ ggplot(data, aes(x = reorder(Weapon, -KPR), y = KPR)) +
 ## Exemplo de Visualização
 
 ```
-
+Rplot31.png
 # Porcentagem de headshots por arma
 ```r
 ggplot(data, aes(x = reorder(Weapon, -HS_Percent), y = HS_Percent)) +
@@ -97,3 +97,7 @@ Armas como a P90 e MP7 possuem uma porcentagem relativamente alta de tiros nas p
 As diferentes armas do Counter-Strike mostram variações significativas em suas estatísticas de desempenho. Armas como a G3SG1 e AWP são altamente eficazes em termos de KPR, enquanto o Desert Eagle se destaca em headshots. Este tipo de análise pode ajudar jogadores a escolherem armas que se adequem ao seu estilo de jogo e estratégias específicas.
 
 Este estudo pode ser expandido no futuro para incluir mais variáveis e um número maior de amostras, permitindo uma análise ainda mais detalhada das armas no Counter-Strike.
+
+git add README.md KPR_por_arma.png
+git commit -m "Adicionar gráfico de KPR por arma"
+git push
