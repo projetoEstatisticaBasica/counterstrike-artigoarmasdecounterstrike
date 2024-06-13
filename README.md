@@ -33,6 +33,9 @@ data <- data.frame(
                   27907, 27572, 25846, 25335, 20285, 15535, 12575, 11796, 10428, 9289, 8306)
 )
 ```
+## Exemplo de Visualização
+
+![Exemplo de Visualização](Rplot31.png)
 
 
 # Estatísticas descritivas
