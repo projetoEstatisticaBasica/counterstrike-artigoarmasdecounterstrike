@@ -1,4 +1,4 @@
-# counterstrike-artigoarmasdecounterstrike
+# Counter Strike: Artigo Armas de Counter Strike
 este repositorio estuda inumeras partidas , dados, armas e etc de counter strike
 
 # Carregar pacotes necessários
