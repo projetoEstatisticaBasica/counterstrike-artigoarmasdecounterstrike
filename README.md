@@ -1,4 +1,4 @@
-Análise de Desempenho das Armas em Counter-Strike
+# Análise de Desempenho das Armas em Counter-Strike
 
 # Introdução
 O Counter-Strike é um dos jogos de tiro em primeira pessoa mais populares do mundo, conhecido por sua jogabilidade estratégica e armas variadas. Cada arma possui características únicas que influenciam o desempenho dos jogadores. Este estudo visa analisar as estatísticas de várias armas no jogo, focando em métricas como kills per round (KPR), porcentagem de headshots (HS %), porcentagem de tiros no peito (Chest %), porcentagem de tiros nas pernas (Leg %), e total de eliminações (Total Kills).
