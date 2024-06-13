@@ -36,6 +36,7 @@ data <- data.frame(
 
 
 # Estatísticas descritivas
+```r
 summary(data)
 
     Weapon               KPR          HS_Percent   
@@ -52,7 +53,7 @@ summary(data)
  Mean   :61.41   Mean   :16.57   Mean   : 69662  
  3rd Qu.:63.23   3rd Qu.:18.57   3rd Qu.: 86887  
  Max.   :68.70   Max.   :24.10   Max.   :370567  
-
+```
 # KPR por arma
 ```r
 ggplot(data, aes(x = reorder(Weapon, -KPR), y = KPR)) +
