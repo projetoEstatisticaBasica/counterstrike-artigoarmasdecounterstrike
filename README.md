@@ -2,10 +2,12 @@
 este repositorio estuda inumeras partidas , dados, armas e etc de counter strike
 
 # Carregar pacotes necessários
+```r
 library(ggplot2)
 library(dplyr)
-
+```
 # Criar dataframe
+```r
 data <- data.frame(
   Weapon = c("AK-47", "M4A1-S", "AWP", "M4A1", "USP-S", "Desert Eagle", "Glock-18", 
              "Galil AR", "FAMAS", "P90", "SG 553", "MP9", "AUG", "MAC-10", "MP7", 
@@ -21,7 +23,7 @@ data <- data.frame(
   Total_Kills = c(370567, 181934, 164754, 104012, 94958, 84197, 83899, 63215, 50834, 
                   27907, 27572, 25846, 25335, 20285, 15535, 12575, 11796, 10428, 9289, 8306)
 )
-
+```
 
 # Estatísticas descritivas
 summary(data)
