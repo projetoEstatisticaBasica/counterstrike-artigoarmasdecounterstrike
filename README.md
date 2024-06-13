@@ -82,7 +82,7 @@ ggplot(data, aes(x = reorder(Weapon, -Leg_Percent), y = Leg_Percent)) +
 
 
 # Resultados
-# A análise revela que:
+A análise revela que:
 
 A arma G3SG1 possui a maior taxa de kills per round (KPR) de 1.9, seguida pela AWP com 1.6.
 O Desert Eagle apresenta a maior porcentagem de headshots (HS %) com 28.5%.
@@ -94,6 +94,6 @@ As diferentes armas do Counter-Strike mostram variações significativas em suas
 
 Este estudo pode ser expandido no futuro para incluir mais variáveis e um número maior de amostras, permitindo uma análise ainda mais detalhada das armas no Counter-Strike.
 
-git add README.md KPR_por_arma.png
+git add README.md Rplot31.png
 git commit -m "Adicionar gráfico de KPR por arma"
 git push
