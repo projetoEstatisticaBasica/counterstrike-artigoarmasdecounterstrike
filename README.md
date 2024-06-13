@@ -13,6 +13,8 @@ Os dados foram coletados de uma amostra representativa de partidas de Counter-St
 # Análise de Dados
 Carregamento dos Dados
 
+source("analysis.R")
+
 # Carregar pacotes necessários
 ```r
 library(ggplot2)
