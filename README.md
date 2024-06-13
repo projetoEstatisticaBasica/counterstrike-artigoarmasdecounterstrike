@@ -37,7 +37,7 @@ data <- data.frame(
                   27907, 27572, 25846, 25335, 20285, 15535, 12575, 11796, 10428, 9289, 8306)
 )
 ```
-image/ Rplot31.png
+
 
 # Estatísticas descritivas
 summary(data)
@@ -51,8 +51,6 @@ ggplot(data, aes(x = reorder(Weapon, -KPR), y = KPR)) +
   labs(title = "Kills Per Round (KPR) por Arma", x = "Arma", y = "KPR") +
   theme_minimal()
 ## Exemplo de Visualização
-
-![Exemplo de Visualização](Rplot31.png)
 
 ```
 
@@ -72,13 +70,18 @@ ggplot(data, aes(x = reorder(Weapon, -Chest_Percent), y = Chest_Percent)) +
   coord_flip() +
   labs(title = "Porcentagem de Tiros no Peito por Arma", x = "Arma", y = "Chest %") +
   theme_minimal()
- ```
+## KPR por Arma
+
+![KPR por Arma](KPR_por_arma.png)
+
+```
 ```r
 ggplot(data, aes(x = reorder(Weapon, -Leg_Percent), y = Leg_Percent)) +
   geom_bar(stat = "identity", fill = "darkred") +
   coord_flip() +
   labs(title = "Porcentagem de Tiros nas Pernas por Arma", x = "Arma", y = "Leg %") +
   theme_minimal()
+
 ```
 
 
