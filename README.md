@@ -33,13 +33,25 @@ data <- data.frame(
                   27907, 27572, 25846, 25335, 20285, 15535, 12575, 11796, 10428, 9289, 8306)
 )
 ```
-## Exemplo de Visualização
-
 
 
 # Estatísticas descritivas
 summary(data)
 
+    Weapon               KPR          HS_Percent   
+ Length:20          Min.   :0.700   Min.   : 9.00  
+ Class :character   1st Qu.:0.875   1st Qu.:12.65  
+ Mode  :character   Median :1.000   Median :14.75  
+                    Mean   :1.060   Mean   :15.59  
+                    3rd Qu.:1.200   3rd Qu.:18.02  
+                    Max.   :1.900   Max.   :28.50  
+ Chest_Percent    Leg_Percent     Total_Kills    
+ Min.   :57.60   Min.   : 9.00   Min.   :  8306  
+ 1st Qu.:59.25   1st Qu.:13.22   1st Qu.: 14795  
+ Median :60.45   Median :16.80   Median : 27740  
+ Mean   :61.41   Mean   :16.57   Mean   : 69662  
+ 3rd Qu.:63.23   3rd Qu.:18.57   3rd Qu.: 86887  
+ Max.   :68.70   Max.   :24.10   Max.   :370567  
 
 # KPR por arma
 ```r
@@ -52,7 +64,6 @@ ggplot(data, aes(x = reorder(Weapon, -KPR), y = KPR)) +
 ![Exemplo de Visualização](Rplot31.png)
 
 
-Rplot31.png
 # Porcentagem de headshots por arma
 ```r
 ggplot(data, aes(x = reorder(Weapon, -HS_Percent), y = HS_Percent)) +
