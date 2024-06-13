@@ -70,12 +70,13 @@ ggplot(data, aes(x = reorder(Weapon, -Chest_Percent), y = Chest_Percent)) +
   coord_flip() +
   labs(title = "Porcentagem de Tiros no Peito por Arma", x = "Arma", y = "Chest %") +
   theme_minimal()
-![Exemplo de Visualização](Rplot33.png)
+
 
 ## KPR por Arma
-
-
 ```
+![Exemplo de Visualização](Rplot33.png)
+
+
 ```r
 ggplot(data, aes(x = reorder(Weapon, -Leg_Percent), y = Leg_Percent)) +
   geom_bar(stat = "identity", fill = "darkred") +
