@@ -1,6 +1,18 @@
 # Counter Strike: Artigo Armas de Counter Strike
 este repositorio estuda inumeras partidas , dados, armas e etc de counter strike
 
+
+# Artigo Científico: Análise de Desempenho das Armas em Counter-Strike
+
+# Introdução
+O Counter-Strike é um dos jogos de tiro em primeira pessoa mais populares do mundo, conhecido por sua jogabilidade estratégica e armas variadas. Cada arma possui características únicas que influenciam o desempenho dos jogadores. Este estudo visa analisar as estatísticas de várias armas no jogo, focando em métricas como kills per round (KPR), porcentagem de headshots (HS %), porcentagem de tiros no peito (Chest %), porcentagem de tiros nas pernas (Leg %), e total de eliminações (Total Kills).
+
+# Metodologia
+Os dados foram coletados de uma amostra representativa de partidas de Counter-Strike, abrangendo diversas armas utilizadas pelos jogadores. As variáveis analisadas incluem KPR, HS %, Chest %, Leg %, e Total Kills. Utilizaremos o RStudio para a análise estatística e a visualização dos dados.
+
+# Análise de Dados
+Carregamento dos Dados
+
 # Carregar pacotes necessários
 ```r
 library(ggplot2)
@@ -24,6 +36,7 @@ data <- data.frame(
                   27907, 27572, 25846, 25335, 20285, 15535, 12575, 11796, 10428, 9289, 8306)
 )
 ```
+image/ Rplot31.png
 
 # Estatísticas descritivas
 summary(data)
@@ -62,3 +75,17 @@ ggplot(data, aes(x = reorder(Weapon, -Leg_Percent), y = Leg_Percent)) +
   labs(title = "Porcentagem de Tiros nas Pernas por Arma", x = "Arma", y = "Leg %") +
   theme_minimal()
 ```
+
+
+# Resultados
+# A análise revela que:
+
+A arma G3SG1 possui a maior taxa de kills per round (KPR) de 1.9, seguida pela AWP com 1.6.
+O Desert Eagle apresenta a maior porcentagem de headshots (HS %) com 28.5%.
+A maioria das armas tem uma alta porcentagem de tiros no peito (Chest %), destacando-se a AWP com 68.7%.
+Armas como a P90 e MP7 possuem uma porcentagem relativamente alta de tiros nas pernas (Leg %), com 24.1% e 24.0%, respectivamente.
+
+# Conclusão
+As diferentes armas do Counter-Strike mostram variações significativas em suas estatísticas de desempenho. Armas como a G3SG1 e AWP são altamente eficazes em termos de KPR, enquanto o Desert Eagle se destaca em headshots. Este tipo de análise pode ajudar jogadores a escolherem armas que se adequem ao seu estilo de jogo e estratégias específicas.
+
+Este estudo pode ser expandido no futuro para incluir mais variáveis e um número maior de amostras, permitindo uma análise ainda mais detalhada das armas no Counter-Strike.
