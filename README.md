@@ -1,7 +1,3 @@
-# Counter Strike: Artigo Armas de Counter Strike
-este repositorio estuda inumeras partidas , dados, armas e etc de counter strike
-
-
 # Artigo Científico: Análise de Desempenho das Armas em Counter-Strike
 
 # Introdução
@@ -72,7 +68,7 @@ ggplot(data, aes(x = reorder(Weapon, -Chest_Percent), y = Chest_Percent)) +
   theme_minimal()
 ## KPR por Arma
 
-![KPR por Arma](KPR_por_arma.png)
+![KPR por Arma](Rplot31.png)
 
 ```
 ```r
